@@ -1,13 +1,9 @@
 jupyterlab-git
 jlab-enhanced-launcher
-knowledgelab
 jupyter-ai[all]
-jupyterlab-github
 jupyterlab_favorites
-jupyterlab-cell-flash
 jupyter-archive
 jupyterlabcodetoc
-jupyter-resource-usage
 jupyterlab-code-formatter
 stickyland
 jupyterlab-unfold
