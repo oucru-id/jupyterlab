@@ -10,10 +10,8 @@ jupyterlabcodetoc
 jupyter-resource-usage
 jupyterlab-code-formatter
 stickyland
-jupyterlab_notify
 jupyterlab-unfold
 jupyterlab-search-replace
-jupyterlab-slideshow
 jupyterlab-day
 jupyterlab-night
 jupyterlab-open-url-parameter
