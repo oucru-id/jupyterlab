@@ -5,3 +5,4 @@ jupyterlab-day
 jupyterlab-night
 jupyterlab-lsp==5.2.0
 jedi-language-server
+pexpect==4.9.0

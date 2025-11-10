@@ -4,10 +4,13 @@ services:
       context: .
       args:
         JUPYTER_IMAGE_VERSION: latest
-        JUPYTER_USER: ${JUPYTER_USER:-jupyter_user}
     ports:
       - "8888:8888"
     volumes:
-      - ./data:/home/${JUPYTER_USER:-jupyter_user}/work
+      - jupyterlab-user-data:/home/jovyan
     environment:
       - JUPYTER_ENABLE_LAB=yes
+
+volumes:
+  jupyterlab-user-data:
+    name: jupyterlab-user-data
