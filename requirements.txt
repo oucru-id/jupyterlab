@@ -1,14 +1,8 @@
 jupyterlab-git
-jlab-enhanced-launcher
-jupyter-ai[all]
-jupyterlab_favorites
-jupyter-archive
-jupyterlabcodetoc
 jupyterlab-code-formatter
-stickyland
-jupyterlab-unfold
 jupyterlab-search-replace
 jupyterlab-day
 jupyterlab-night
-jupyterlab-open-url-parameter
-jupyterlab-fileopen
+jupyterlab-lsp==5.2.0
+jedi-language-server
+jupyterlab-unfold

@@ -7,7 +7,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./work:/home/jovyan/work
+      - ./data:/home/jovyan/work
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - GRANT_SUDO=yes
