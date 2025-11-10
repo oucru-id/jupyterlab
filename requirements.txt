@@ -5,4 +5,3 @@ jupyterlab-day
 jupyterlab-night
 jupyterlab-lsp==5.2.0
 jedi-language-server
-jupyterlab-unfold
