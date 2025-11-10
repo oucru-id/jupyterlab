@@ -6,10 +6,8 @@ USER root
 # Install git
 RUN apt-get update && \
     apt-get install -y git && \
+    git config --system credential.helper 'store --file ~/.git-credentials' && \
     rm -rf /var/lib/apt/lists/*
-
-RUN echo "jovyan ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/jovyan && \
-    chmod 0440 /etc/sudoers.d/jovyan
 
 # Switch back to jovyan user and install extensions
 USER jovyan
