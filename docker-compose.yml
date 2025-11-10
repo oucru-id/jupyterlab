@@ -4,12 +4,15 @@ services:
       context: .
       args:
         JUPYTER_IMAGE_VERSION: latest
+    user: root
     ports:
       - "8888:8888"
     volumes:
-      - jupyterlab-user-data:/home/jovyan
+      - jupyterlab-user-data:/home/chiqors
     environment:
-      - JUPYTER_ENABLE_LAB=yes
+      - NB_USER=chiqors
+      - CHOWN_HOME=yes
+      - GRANT_SUDO=yes
 
 volumes:
   jupyterlab-user-data:
