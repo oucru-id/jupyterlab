@@ -4,11 +4,10 @@ services:
       context: .
       args:
         JUPYTER_IMAGE_VERSION: latest
+        JUPYTER_USER: ${JUPYTER_USER:-jupyter_user}
     ports:
       - "8888:8888"
     volumes:
-      - ./data:/home/jovyan/work
+      - ./data:/home/${JUPYTER_USER:-jupyter_user}/work
     environment:
       - JUPYTER_ENABLE_LAB=yes
-      - GRANT_SUDO=yes
-    user: jovyan
