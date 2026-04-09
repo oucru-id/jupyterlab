@@ -5,7 +5,7 @@ USER root
 
 # Install git
 RUN apt-get update && \
-    apt-get install -y git && \
+    apt-get install -y git gcc python3-dev && \
     rm -rf /var/lib/apt/lists/*
 
 USER ${NB_USER}
